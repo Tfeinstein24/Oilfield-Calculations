@@ -5,3 +5,17 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+img {
+width: 50px;
+height: 50px;
+}
+
+#connect {
+font-size: 24px;
+font-style: bold;
+}
+
+.navbtn {
+background-color: #222;
+}
