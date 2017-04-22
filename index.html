@@ -9,6 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
 
+
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -58,7 +59,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="navbtn"><a href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/index.html">Home</a></li>
-        <li><a class="navbtn" href="#">About</a></li>
+        <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/about.html">About</a></li>
         <li><a class="navbtn" href="#">Projects</a></li>
         <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/contact.html">Contact</a></li>
       </ul>
@@ -72,34 +73,20 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Annular Volume</a></p>
-      <p><a href="#">Pipe Volume</a></p>
-      <p><a href="#">Annular Capacity</a></p>
-      <p><a href="#">Annular Velocity</a></p>
-      <p><a href="#">Formation Integrity Test (FIT)</a></p>
-      <p><a href="#">Formation Temperature</a></p>
-      <p><a href="#">Hydrostatic Pressure</a></p>
-      <p><a href="#">Leak Off Test (LOT)</a></p>
-      <p><a href="#">Pressure Gradient</a></p>
-      <p><a href="#">Slug Calculation</a></p>
+      <p><a id="AV" class="link" href="#">Annular Volume</a></p>
+      <p><a id="PV" class="link" href="#">Pipe Volume</a></p>
+      <p><a id="AC" class="link" href="#">Annular Capacity</a></p>
+      <p><a id="AnnV" class="link" href="#">Annular Velocity</a></p>
+      <p><a id="FIT" class="link" href="#">Formation Integrity Test (FIT)</a></p>
+      <p><a id="FT" class="link" href="#">Formation Temperature</a></p>
+      <p><a id="HP" class="link" href="#">Hydrostatic Pressure</a></p>
+      <p><a id="LOT" class="link" href="#">Leak Off Test (LOT)</a></p>
+      <p><a id="PG" class="link" href="#">Pressure Gradient</a></p>
+      <p><a id="SC" class="link" href="#">Slug Calculation</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Enter Parameters</h1>
-      <form action="/action_page.php">
-  ex:<br>
-  <input type="text" name="firstname" value="ex">
-  <br><br>
-  ex:<br>
- <input type="text" name="firstname" value="ex">
- <br><br>
- ex:<br>
-  <input type="text" name="firstname" value="ex">
-  <br><br>
-  ex:<br>
-  <input type="text" name="firstname" value="ex">
-  <br>
-  <br><br>
-  <input type="submit" value="Submit">
+      <form id="inputs" action="/action_page.php">
 </form>
       <hr>
       <h3>Saved Calculations</h3>
@@ -127,4 +114,5 @@
 </footer>
 
 </body>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </html>
