@@ -1,26 +1,94 @@
-footer {
-    position: fixed;
-    height: 70px;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+/*********** BODY **********/
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+/********** NAVITGATION **********/
+    .navbtn {
+        background-color: #0005DE;
+    }
+
+    /*Tomagocha name in navbar */
+    .Tomagocha {
+        font-family: 'Bitter', serif;
+        color: #DE0000;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    /* glyphicon icon connected to login in navbar */
+    .glyphicon-log-in {
+        color: red;
+    }
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            background-color: #0005DE;
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+/********** FOOTER **********/
+
+    /* Set black background color blue, silver text and some padding */
+    footer {
+        background-color: #0005DE;
+        color: #8D8D8D;
+        font-size: 1.5em;
+        text-align: center;
+        padding-top: 1em;
+
+    }
+
+    footer {
+        position: fixed;
+        height: 70px;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
 }
 
-img {
-width: 50px;
-height: 50px;
+    
+/********** HOME PAGE **********/
+
+    
+    /* PERIMITERS */
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+        height: 450px
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+    }
+
+    
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+        .sidenav {
+            height: auto;
+            padding: 15px;
+        }
+        .row.content {
+            height: auto;
+        }
+    }
+
+    /********** CONNECT LINKS **********/
+
+    #connect {
+        font-size: 24px;
+        font-style: bold;
 }
 
-#connect {
-font-size: 24px;
-font-style: bold;
-}
 
-.navbtn {
-background-color: #222;
-}
 
-ul {
-    list-style-type: none;
-    line-height: 30px;
-}
+
+    
