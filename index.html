@@ -58,8 +58,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="navbtn"><a href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/index.html">Home</a></li>
-        <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/about.html">About</a></li>
+        <li class="navbtn"><a href="#">Home</a></li>
+        <li><a class="navbtn" href="/about.html">About</a></li>
         <li><a class="navbtn" href="#">Projects</a></li>
         <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/contact.html">Contact</a></li>
       </ul>
@@ -69,11 +69,12 @@
     </div>
   </div>
 </nav>
+
+
   
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a id="AV" class="link" href="#">Annular Volume</a></p>
       <p><a id="PV" class="link" href="#">Pipe Volume</a></p>
       <p><a id="AC" class="link" href="#">Annular Capacity</a></p>
       <p><a id="AnnV" class="link" href="#">Annular Velocity</a></p>
@@ -86,8 +87,47 @@
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Enter Parameters</h1>
-      <form id="inputs" action="/action_page.php">
-</form>
+      
+        
+      <form id="inputs" action="">
+          <!-- bmc: adding this stuff so I can test the calculations -->
+          <ul>
+              <li>Inside Diameter: <input id="casingID" name="casingID" type="number" value="">
+              </li>
+              <li>Outside Diameter: <input id="casingOD" name="casingOD" type="number" value="">
+              </li>
+              <ul>
+                  <li><input type="radio" class="standard" name="diamUnits" id="inches">inches
+                  </li>
+                  <li><input type="radio" class="metric" name="diamUnits" id="centimeters">centimeters
+                  </li>
+              </ul>
+              <li>Depth: <input id="depth" name="depth" type="number" value="">
+                  <ul>
+                      <li><input type="radio" class="standard" name="depthUnits" id="feet">feet
+                      </li>
+                      <li><input type="radio" class="metric" name="depthUnits" id="meters">meters
+                      </li>
+                  </ul>
+              </li>
+        
+              <li>In which units do you want the capacity?
+                  <ul>
+                      <li><input type="radio" class="standard" name="volumeUnits" id="bbl">bbl<br>
+                      </li>
+                      <li><input type="radio" class="standard" name="volumeUnits" id="cuFeet">cu.ft.<br>
+                      </li>
+                      <li><input type="radio" class="standard" name="volumeUnits" id="gal">gal<br>
+                      </li>
+                      <li><input type="radio" class="metric" name="volumeUnits" id="cuMeters">cubic meters<br>
+                      </li>
+                  </ul>
+              </li>
+        
+              <li><input type="submit" value="Submit">
+              </li>
+          </ul>
+      </form>
       <hr>
       <h3>Saved Calculations</h3>
       <p>Lorem ipsum...</p>
@@ -106,13 +146,15 @@
       </div>
     </div>
   </div>
-</div>
 
 <!-- Navbar Bottom -->
 <footer class="navbar-fixed-bottom">
     <p>Copyright 2017 - Taylor Feinstein, Bon Crowder, Lonnie White, Rochelle Beal</p>
 </footer>
 
-</body>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
+<script type="text/javascript" src="assets/javascript/calculations.js"></script>
+<script type="text/javascript" src="assets/javascript/inputs.js"></script>
+</body>
+
 </html>
