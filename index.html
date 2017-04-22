@@ -10,6 +10,7 @@
   <style>
 
 
+
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -86,11 +87,13 @@
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Enter Parameters</h1>
+
+      <!-- All forms -->
       <form id="inputs" action="/action_page.php">
 </form>
       <hr>
       <h3>Saved Calculations</h3>
-      <p>Lorem ipsum...</p>
+      <p id="display">Lorem ipsum...</p>
     </div>
     <div class="col-sm-2 sidenav">
         <h2 id="connect">Connect With Us!</h2>
@@ -114,5 +117,18 @@
 </footer>
 
 </body>
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBzyWlZhbc2949NipPslrcXRnMAvxC-rLc",
+    authDomain: "oilfield-calculations.firebaseapp.com",
+    databaseURL: "https://oilfield-calculations.firebaseio.com",
+    projectId: "oilfield-calculations",
+    storageBucket: "oilfield-calculations.appspot.com",
+    messagingSenderId: "20281812714"
+  };
+  firebase.initializeApp(config);
+</script>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 </html>
