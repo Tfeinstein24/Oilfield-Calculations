@@ -1,130 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Oilfield Calculations</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+<html lang="en-US">
 
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+<head>
+    <title>Oilfield Calculations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
+        background-color: #0005DE;
+        margin-bottom: 0;
+        border-radius: 0;
     }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
+
+     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+        height: 450px
+    }
+
     /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
     }
-    
-    /* Set black background color, white text and some padding */
+
+    /* Set black background color blue, silver text and some padding */
     footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
+        background-color: #0005DE;
+        color: #8D8D8D;
+        font-size: 1.5em;
+        text-align: center;
+        padding-top: 1em;
+
     }
-    
+
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+        .sidenav {
+            height: auto;
+            padding: 15px;
+        }
+        .row.content {
+            height: auto;
+        }
     }
-  </style>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    </style>
+   
+   
 </head>
-<body background="images/TomagochaFullMuted700px.jpg">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Tomagocha Productions</a>
+<body background="Project_1/images/TomagochaFullMuted700px.jpg">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="Tomagocha">Tomagocha</span> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="navbtn"><a href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/index.html">Home</a></li>
+                    <li><a class="navbtn" href="#">About</a></li>
+                    <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#loginModal"><span class="glyphicon glyphicon-log-in" class="loginSpan"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#">Annular Volume</a></p>
+                <p><a href="#">Pipe Volume</a></p>
+                <p><a href="#">Annular Capacity</a></p>
+                <p><a href="#">Annular Velocity</a></p>
+                <p><a href="#">Formation Integrity Test (FIT)</a></p>
+                <p><a href="#">Formation Temperature</a></p>
+                <p><a href="#">Hydrostatic Pressure</a></p>
+                <p><a href="#">Leak Off Test (LOT)</a></p>
+                <p><a href="#">Pressure Gradient</a></p>
+                <p><a href="#">Slug Calculation</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1>Enter Parameters</h1>
+                <form action="/action_page.php">
+                    ex:
+                    <br>
+                    <input type="text" name="firstname" value="ex">
+                    <br>
+                    <br> ex:
+                    <br>
+                    <input type="text" name="firstname" value="ex">
+                    <br>
+                    <br> ex:
+                    <br>
+                    <input type="text" name="firstname" value="ex">
+                    <br>
+                    <br> ex:
+                    <br>
+                    <input type="text" name="firstname" value="ex">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+                <hr>
+                <h3>Saved Calculations</h3>
+                <p>Lorem ipsum...</p>
+            </div>
+            <div class="col-sm-2 sidenav">
+                <h2 id="connect">Connect With Us!</h2>
+                <hr>
+                <a href="https://github.com/Tfeinstein24">
+                    <img src="assets/images/github.png" class="icon" alt="Github"
+            </div>
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="navbtn"><a href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/index.html">Home</a></li>
-        <li><a class="navbtn" href="#">About</a></li>
-        <li><a class="navbtn" href="#">Projects</a></li>
-        <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/contact.html">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
     </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Annular Volume</a></p>
-      <p><a href="#">Pipe Volume</a></p>
-      <p><a href="#">Annular Capacity</a></p>
-      <p><a href="#">Annular Velocity</a></p>
-      <p><a href="#">Formation Integrity Test (FIT)</a></p>
-      <p><a href="#">Formation Temperature</a></p>
-      <p><a href="#">Hydrostatic Pressure</a></p>
-      <p><a href="#">Leak Off Test (LOT)</a></p>
-      <p><a href="#">Pressure Gradient</a></p>
-      <p><a href="#">Slug Calculation</a></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Enter Parameters</h1>
-      <form action="/action_page.php">
-  ex:<br>
-  <input type="text" name="firstname" value="ex">
-  <br><br>
-  ex:<br>
- <input type="text" name="firstname" value="ex">
- <br><br>
- ex:<br>
-  <input type="text" name="firstname" value="ex">
-  <br><br>
-  ex:<br>
-  <input type="text" name="firstname" value="ex">
-  <br>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
-      <hr>
-      <h3>Saved Calculations</h3>
-      <p>Lorem ipsum...</p>
-    </div>
-    <div class="col-sm-2 sidenav">
-        <h2 id="connect">Connect With Us!</h2>
-            <hr>
-            <a href="https://github.com/Tfeinstein24">
-            <img src="images/github.png" class="icon" alt="Github"></a>
-
-            <a  href="https://www.linkedin.com/in/taylor-feinstein-5542b988/">
-            <img src="images/linkedin.png" class="icon" alt="LinkedIn"></a>
-
-            <a href="https://stackoverflow.com/users/7466742/taylor-feinstein?tab=profile">
-            <img src="images/stackoverflow.png" class="icon" alt="StackOverflow"></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Navbar Bottom -->
-<footer class="navbar-fixed-bottom">
-    <p>Copyright 2017 - Taylor Feinstein, Bon Crowder, Lonnie White, Rochelle Beal</p>
-</footer>
-
+    <!-- Navbar Bottom -->
+    <footer class="navbar-fixed-bottom">
+        <p>&copy 2017 Tomagocha Ltd</p>
+    </footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script type="text/javascript" href="assets/javascript/app.js>"</script>
+
 </html>
