@@ -19,3 +19,8 @@ font-style: bold;
 .navbtn {
 background-color: #222;
 }
+
+ul {
+    list-style-type: none;
+    line-height: 30px;
+}
