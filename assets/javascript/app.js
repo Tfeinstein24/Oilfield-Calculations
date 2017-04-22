@@ -82,5 +82,12 @@ DrillPipeSize: AnnularVolume.DrillPipeSize,
 
 });
 
+dataRef.on("child_added",function(snapshot){
+	console.log(snapshot.val());
+
+	// display answers in html
+$("#display").html(snapshot.val().HoleID);
+});
+
 
 
