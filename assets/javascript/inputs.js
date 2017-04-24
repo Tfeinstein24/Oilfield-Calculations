@@ -10,6 +10,12 @@ $(document).on('click', '#PV', function () {
             "<input type='text' placeholder='ID of Drill Pipe' id='drillPipeID'> inches" + "<br><br>" +
             "<input type='text' placeholder='Length of Drill Pipe' id='drillPipeLength'> feet" + "<br><br>" +
             "<input type='submit' value='Calculate Pipe Volume'>")
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculatePipeVolume();
+        $("#outputs").html("<br><h3>Standby as we caclulate Pipe Volume</h3>");
+        console.log("we're attempting to calculate pipe volume")
+    });
 });
 
 // bmc: I'm using annularCapacity for the first calculation
@@ -43,9 +49,9 @@ $(document).on('click', '#FIT', function () {
     console.log('#FIT');
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='FIT required'> ppg" + "<br><br>" +
-            "<input type='text' placeholder='Mud Weight'> ppg" + "<br><br>" +
-            "<input type='text' placeholder='Shoe Depth (TVD)'> feet" + "<br><br>" +
+            "<input type='text' placeholder='FIT required' id='fitRequired'> ppg" + "<br><br>" +
+            "<input type='text' placeholder='Mud Weight' id='mudWeight'> ppg" + "<br><br>" +
+            "<input type='text' placeholder='Shoe Depth (TVD)' id='shoeDepth'> feet" + "<br><br>" +
             "<input type='submit' value='Calculate Pressure Required'>")
 });
 
