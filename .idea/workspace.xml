@@ -4,7 +4,6 @@
     <list default="true" id="3b4cc323-5346-4fed-90b4-cd71757bad44" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascript/app.js" afterPath="$PROJECT_DIR$/assets/javascript/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascript/calculations.js" afterPath="$PROJECT_DIR$/assets/javascript/calculations.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascript/inputs.js" afterPath="$PROJECT_DIR$/assets/javascript/inputs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
@@ -21,78 +20,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="94" column="32" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
-              <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calculations.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/javascript/calculations.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
-              <folding>
-                <element signature="n#!!doc;n#calculatePipeVolume#0" expanded="false" />
-                <element signature="n#!!block;n#calculatePipeVolume#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inputs.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/javascript/inputs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="27" column="84" lean-forward="false" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unused.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/javascript/unused.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc;n#sendSomeDataToSheet#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/javascript/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,6 +33,10 @@
     <findStrings>
       <find>value</find>
       <find>calculateAnnularCapacity</find>
+      <find>pv</find>
+      <find>calculatePipe</find>
+      <find>standby</find>
+      <find>stand</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,9 +45,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/javascript/unused.js" />
         <option value="$PROJECT_DIR$/assets/javascript/app.js" />
+        <option value="$PROJECT_DIR$/../../github-experiment/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/javascript/calculations.js" />
         <option value="$PROJECT_DIR$/assets/javascript/inputs.js" />
@@ -132,7 +65,7 @@
     <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1258" />
-    <option name="height" value="732" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -304,23 +237,23 @@
       <workItem from="1492875125493" duration="1212000" />
       <workItem from="1492877299156" duration="594000" />
       <workItem from="1492878496063" duration="20144000" />
-      <workItem from="1493058913215" duration="74000" />
+      <workItem from="1493058913215" duration="9832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22024000" />
+    <option name="totallyTimeSpent" value="31782000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1258" height="732" extended-state="0" />
+    <frame x="4" y="23" width="1258" height="777" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24562798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.060413353" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3064972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -369,8 +302,16 @@
         <state relative-caret-position="1320">
           <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
           <folding>
-            <element signature="n#!!doc;n#calculatePipeVolume#0" expanded="false" />
-            <element signature="n#!!block;n#calculatePipeVolume#0" expanded="false" />
+            <element signature="n#!!doc;n#calculateInnerCapacity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateInnerCapacity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateAnnularCapacity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateAnnularVelocity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateFormationIntegrityTest#0" expanded="false" />
+            <element signature="n#!!block;n#calculateFormationTemperature#0" expanded="false" />
+            <element signature="n#!!block;n#calculateHydrostaticPressure#0" expanded="false" />
+            <element signature="n#!!block;n#calculateLeakOffTest#0" expanded="false" />
+            <element signature="n#!!block;n#calculatePressureGradient#0" expanded="false" />
+            <element signature="n#!!block;n#calculateSlugCalculation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -381,6 +322,14 @@
           <caret line="27" column="84" lean-forward="true" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#296#864#0" expanded="false" />
+            <element signature="e#911#1672#0" expanded="false" />
+            <element signature="e#1721#2474#0" expanded="false" />
+            <element signature="e#2522#3294#0" expanded="false" />
+            <element signature="e#3341#4151#0" expanded="false" />
+            <element signature="e#4198#4881#0" expanded="false" />
+            <element signature="e#4929#5677#0" expanded="false" />
+            <element signature="e#6349#7220#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -441,11 +390,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../github-experiment/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="561">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascript/calculations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="274" column="37" lean-forward="false" selection-start-line="274" selection-start-column="37" selection-end-line="274" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc;n#calculateInnerCapacity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateInnerCapacity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateAnnularCapacity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateAnnularVelocity#0" expanded="false" />
+            <element signature="n#!!block;n#calculateFormationIntegrityTest#0" expanded="false" />
+            <element signature="n#!!block;n#calculateFormationTemperature#0" expanded="false" />
+            <element signature="n#!!block;n#calculateHydrostaticPressure#0" expanded="false" />
+            <element signature="n#!!block;n#calculateLeakOffTest#0" expanded="false" />
+            <element signature="n#!!block;n#calculatePressureGradient#0" expanded="false" />
+            <element signature="n#!!block;n#calculateSlugCalculation#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -459,24 +446,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/javascript/inputs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="94" column="32" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+        <state relative-caret-position="438">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascript/calculations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
-          <folding>
-            <element signature="n#!!doc;n#calculatePipeVolume#0" expanded="false" />
-            <element signature="n#!!block;n#calculatePipeVolume#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#296#864#0" expanded="false" />
+            <element signature="e#911#1672#0" expanded="false" />
+            <element signature="e#1721#2474#0" expanded="false" />
+            <element signature="e#2522#3294#0" expanded="false" />
+            <element signature="e#3341#4151#0" expanded="false" />
+            <element signature="e#4198#4881#0" expanded="false" />
+            <element signature="e#4929#5677#0" expanded="false" />
+            <element signature="e#6349#7220#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -486,16 +469,6 @@
         <state relative-caret-position="176">
           <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascript/inputs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="27" column="84" lean-forward="false" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

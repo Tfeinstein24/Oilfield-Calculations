@@ -3,22 +3,20 @@
 
 // bmc: this is the code for the input populations. As user clicks the desired formula, the appropriate inputs get populated on the page
 
-$(document).on('click', '#PV', function () {
-    console.log('#PV');
+$(document).on('click', '#IC', function () {
+    console.log('#IC');
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='ID of Drill Pipe' id='drillPipeID'> inches" + "<br><br>" +
-            "<input type='text' placeholder='Length of Drill Pipe' id='drillPipeLength'> feet" + "<br><br>" +
-            "<input type='submit' value='Calculate Pipe Volume'>")
+            "<input type='text' placeholder='Diameter' id='diameter'> inches" + "<br><br>" +
+            "<input type='submit' value='Calculate Inner Capacity'>");
+    $('#calcPageTitle').text("Inner Capacity");
     $("form").on("submit", function (e) {
         e.preventDefault();
-        calculatePipeVolume();
-        $("#outputs").html("<br><h3>Standby as we caclulate Pipe Volume</h3>");
+        calculateInnerCapacity();
+        $("#outputs").html("<br><h3 class='result'>Standby as we caclulate inner capacity...</h3>");
         console.log("we're attempting to calculate pipe volume")
     });
 });
-
-// bmc: I'm using annularCapacity for the first calculation
 
 $(document).on('click', '#AC', function () {
     console.log('#AC');
@@ -27,7 +25,8 @@ $(document).on('click', '#AC', function () {
             "<input type='text' placeholder='OD of Annulus' id='outsideDiameter'> inches" + "<br><br>" +
             "<input type='text' placeholder='ID of Annulus' id='insideDiameter'> inches" + "<br><br>" +
             "<input type='text' placeholder='Depth' id='holeDepth'> feet" + "<br><br>" +
-            "<input type='submit' value='Calculate Volume of Annulus'>")
+            "<input type='submit' value='Calculate Volume of Annulus'>");
+    $('#calcPageTitle').text("Annular Capacity");
     $("form").on("submit", function (e) {
         e.preventDefault();
         calculateAnnularCapacity();
@@ -40,9 +39,17 @@ $(document).on('click', '#AnnV', function () {
     console.log('#AnnV');
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='Pump Output'>" + "<br><br>" +
-            "<input type='text' placeholder='Ann Capacity'>" + "<br><br>" +
-            "<input type='submit' value='Calculate'>")
+            "<input type='text' placeholder='Flow Rate' id='pumpOutput'> bbl/min" + "<br><br>" +
+            "<input type='text' placeholder='Large Diam' id='bigDiam'> inches" + "<br><br>" +
+            "<input type='text' placeholder='Small Diam' id='smallDiam'> inches" + "<br><br>" +
+            "<input type='submit' value='Calculate Annular Velocity'>")
+    $('#calcPageTitle').text("Annular Velocity");
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculateAnnularVelocity();
+        $("#outputs").html("<br><h3>Standby as we caclulate Annular Velocity...</h3>");
+        console.log("we're attempting to calculate velocity")
+    });
 });
 
 $(document).on('click', '#FIT', function () {
@@ -52,54 +59,97 @@ $(document).on('click', '#FIT', function () {
             "<input type='text' placeholder='FIT required' id='fitRequired'> ppg" + "<br><br>" +
             "<input type='text' placeholder='Mud Weight' id='mudWeight'> ppg" + "<br><br>" +
             "<input type='text' placeholder='Shoe Depth (TVD)' id='shoeDepth'> feet" + "<br><br>" +
-            "<input type='submit' value='Calculate Pressure Required'>")
+            "<input type='submit' value='Calculate Pressure Required'>");
+    $('#calcPageTitle').text("Formation Integrity Test");
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculateFormationIntegrityTest();
+        $("#outputs").html("<br><h3>Standby as we calulate the pressure required ...</h3>");
+        console.log("we're attempting to calculate FIT")
+    });
 });
 
 $(document).on('click', '#FT', function () {
     console.log('#FT');
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='Surface Temperature'> degrees F" + "<br><br>" +
-            "<input type='text' placeholder='Temperater Gradient'> F/ft" + "<br><br>" +
-            "<input type='text' placeholder='Formation Depth in TVD'> feet" + "<br><br>" +
-            "<input type='submit' value='Calculate Formation Temperature'>")
+            "<input type='text' placeholder='Surface Temperature' id='surfTemp'> degrees F" + "<br><br>" +
+            "<input type='text' placeholder='Temperature Gradient' id='tempGrad'> degrees F/ft" + "<br><br>" +
+            "<input type='text' placeholder='Formation TVD' id='formDepth'> feet" + "<br><br>" +
+            "<input type='submit' value='Calculate Formation Temperature'>");
+    $('#calcPageTitle').text("Formation Temperature");
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculateFormationTemperature();
+        $("#outputs").html("<br><h3>Standby as we calulate the formation temperature ...</h3>");
+        console.log("we're attempting to calculate formation temp")
+    });
 });
 
 $(document).on('click', '#HP', function () {
     console.log('#HP');
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='Mud weight'>" + "<br><br>" +
-            "<input type='text' placeholder='TVD'> feet" + "<br><br>" +
-            "<input type='submit' value='Calculate'>")
+            "<input type='text' placeholder='Mud weight' id='mudWeight'> ppg" + "<br><br>" +
+            "<input type='text' placeholder='TVD' id='verticalDepthHP'> feet" + "<br><br>" +
+            "<input type='submit' value='Calculate Hydrostatic Pressure'>");
+    $('#calcPageTitle').text("Hydrostatic Pressure");
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculateHydrostaticPressure();
+        $("#outputs").html("<br><h3>Standby as we calulate the hydrostatic pressure ...</h3>");
+        console.log("we're attempting to calculate hydrostatic pressure")
+    });
 });
 
 $(document).on('click', '#LOT', function () {
     console.log('#LOT');
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='LOT pressure (psi)'>" + "<br><br>" +
-            "<input type='text' placeholder='Mud weight (ppg)'>" + "<br><br>" +
-            "<input type='text' placeholder='Shoe Depth in TVD'>" + "<br><br>" +
-            "<input type='submit' value='Calculate'>")
+            "<input type='text' placeholder='LOT pressure' id='lotPressure'> psi" + "<br><br>" +
+            "<input type='text' placeholder='Mud weight' id='mudWeightLOT'> ppg" + "<br><br>" +
+            "<input type='text' placeholder='Shoe Depth/TVD' id='shoeDepthLOT'> feet" + "<br><br>" +
+            "<input type='submit' value='Calculate LOT'>");
+    $('#calcPageTitle').text("Leak Off Test");
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculateLeakOffTest();
+        $("#outputs").html("<br><h3>Standby as we calulate the LOT equivalent mud weight ...</h3>");
+        console.log("we're attempting to calculate LOT")
+    });
 });
 
 $(document).on('click', '#PG', function () {
     console.log('#PG');
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='Mud weight (ppg)'>" + "<br><br>" +
-            "<input type='submit' value='Calculate'>")
+            "<input type='text' placeholder='Mud weight' id='mudWeightPG'> ppg" + "<br><br>" +
+            "<input type='submit' value='Calculate Pressure Gradient'>");
+    $('#calcPageTitle').text("Pressure Gradient");
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculatePressureGradient();
+        $("#outputs").html("<br><h3>Standby as we calulate the pressure gradient ...</h3>");
+        console.log("we're attempting to calculate pressure gradient")
+    });
 
 });
 
 $(document).on('click', '#SC', function () {
     console.log('#SC');
+
     $('#outputs').html('');
     $('#inputs').html(
-            "<input type='text' placeholder='Desired length of dry pipe (ft)'>" + "<br><br>" +
-            "<input type='text' placeholder='Drill pipe capacity (bbl/ft)'>" + "<br><br>" +
-            "<input type='text' placeholder='Current MW (ppg)'>" + "<br><br>" +
-            "<input type='text' placeholder='Slug Weight (ppg)'>" + "<br><br>" +
-            "<input type='submit' value='Calculate'>")
+            "<input type='text' placeholder='Desired length dry pipe' id='pipeLength'> feet" + "<br><br>" +
+            "<input type='text' placeholder='Drill pipe capacity' id='dpCapacity'> bbl/ft" + "<br><br>" +
+            "<input type='text' placeholder='Current MW' id='currentMudWeight'> ppg" + "<br><br>" +
+            "<input type='text' placeholder='Slug Weight' id='slugWeight'> ppg" + "<br><br>" +
+            "<input type='submit' value='Do Slug Calculations'>");
+    $('#calcPageTitle').text("Slug Calculation");
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        calculateSlugCalculation();
+        $("#outputs").html("<br><h3>Standby as we do your slug calculations ...</h3>");
+        console.log("we're attempting to calculate slug stuff")
+    });
 });

@@ -31,3 +31,7 @@ ul {
     list-style-type: none;
     line-height: 30px;
 }
+
+.result {
+    line-height:2em;
+}
