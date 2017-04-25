@@ -1,30 +1,27 @@
+/*********** OTHER **********/
+
 body {
-    background-repeat:no-repeat;
+    /*height: 100%;*/
+    background-repeat: no-repeat;
     background-position: left 50% top 15%;
     background-size: 35%;
 }
 
-
-footer {
-    position: fixed;
-    height: 70px;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.background-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 img {
-width: 50px;
-height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
-#connect {
-font-size: 24px;
-font-style: bold;
-}
-
-.navbtn {
-background-color: #222;
+h3 {
+    margin: 0 0 1em 0;
 }
 
 ul {
@@ -34,4 +31,150 @@ ul {
 
 .result {
     line-height:2em;
+}
+
+/********** NAVITGATION **********/
+.navbtn {
+    background-color: #0005DE;
+}
+
+
+/*Tomagocha name in navbar */
+.Tomagocha {
+    font-family: 'Bitter', serif;
+    background-color: #0005DE;
+    color: #DE0000;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: .25px .25px white;
+}
+
+/* glyphicon icon connected to login in navbar */
+.glyphicon-log-in {
+    color: red;
+}
+
+#navbar {
+    background-color: #0005DE;
+
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    border-bottom: 2px solid #F3F3F3;
+    background-color: #0005DE;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/********** FOOTER **********/
+
+/* Set black background color blue, silver text and some padding */
+footer {
+    background-color: #0005DE;
+    color: #8D8D8D;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+    border-top: 2px solid white;
+
+}
+/* bmc: weird stuff afoot #pardonthepun with the footer css */
+/* bmc: we should ask Erick about this if we have time */
+
+footer {
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/********************************************
+                PAGE: HOME
+********************************************/
+
+.index-background {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* PERIMITERS */
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+/********** CONNECT LINKS **********/
+
+#connect {
+    font-size: 24px;
+    font-style: bold;
+}
+
+
+/********************************************
+                PAGE: ABOUT
+********************************************/
+
+.profile-photo {
+    display: block;
+    max-height: 400px;
+    max-width: 400px;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto 30px;
+
+}
+
+#aboutpg-footer {
+    background-color: none;
+}
+
+.about-tomagocha {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.font-color {
+    font-size: 1.5em;
+    color: #F3F3F3;
+    margin: 2em 4em 2em 4em;
+}
+
+#twitterLink {
+    font-size: 1.5em;
+    color: white;
+    margin: 2em 4em 2em 4em;
+}
+
+#tomagocha-twitter-link {
+    color: red;
+}
+
+#aboutpg-footer-border {
+    border-top: 2px solid #F3F3F3;
 }
