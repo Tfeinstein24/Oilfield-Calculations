@@ -10,6 +10,7 @@
   <style>
 
 
+
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -86,6 +87,7 @@
       <p><a id="SC" class="link" href="#">Slug Calculation</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
+
       <h1 id="calcPageTitle">Welcome!</h1>
       
         
@@ -96,7 +98,7 @@
         <div id="outputs"></div>
 
       <h3>Saved Calculations</h3>
-      <p>Lorem ipsum...</p>
+      <p id="display">Lorem ipsum...</p>
     </div>
     <div class="col-sm-2 sidenav">
         <h2 id="connect">Connect With Us!</h2>
@@ -117,6 +119,20 @@
 <footer class="navbar-fixed-bottom">
     <p>Copyright 2017 - Taylor Feinstein, Bon Crowder, Lonnie White, Rochelle Beal</p>
 </footer>
+
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBzyWlZhbc2949NipPslrcXRnMAvxC-rLc",
+    authDomain: "oilfield-calculations.firebaseapp.com",
+    databaseURL: "https://oilfield-calculations.firebaseio.com",
+    projectId: "oilfield-calculations",
+    storageBucket: "oilfield-calculations.appspot.com",
+    messagingSenderId: "20281812714"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 <script type="text/javascript" src="assets/javascript/calculations.js"></script>
