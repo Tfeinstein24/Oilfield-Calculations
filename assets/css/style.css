@@ -1,22 +1,41 @@
-/*********** BODY **********/
+/*********** OTHER **********/
+
+    body {
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .background-image {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 
     img {
         width: 50px;
         height: 50px;
     }
 
+    h3 {
+        margin: 0 0 1em 0;
+    }
 
 /********** NAVITGATION **********/
     .navbtn {
         background-color: #0005DE;
     }
 
+
     /*Tomagocha name in navbar */
     .Tomagocha {
         font-family: 'Bitter', serif;
+        background-color: #0005DE;
         color: #DE0000;
         font-size: 1.5em;
         font-weight: bold;
+        text-shadow: .25px .25px white;
     }
 
     /* glyphicon icon connected to login in navbar */
@@ -24,8 +43,14 @@
         color: red;
     }
 
+    #navbar {
+        background-color: #0005DE;
+        
+    }
+
     /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
+            border-bottom: 2px solid #F3F3F3;
             background-color: #0005DE;
             margin-bottom: 0;
             border-radius: 0;
@@ -40,6 +65,7 @@
         font-size: 1.5em;
         text-align: center;
         padding-top: 1em;
+        border-top: 2px solid white;
 
     }
 
@@ -52,7 +78,16 @@
 }
 
     
-/********** HOME PAGE **********/
+/********************************************
+                PAGE: HOME
+********************************************/   
+
+    .index-background {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
 
     
     /* PERIMITERS */
@@ -89,6 +124,45 @@
 }
 
 
+/********************************************
+                PAGE: ABOUT
+********************************************/   
+   
+    .profile-photo {
+        display: block;
+        max-height: 400px;
+        max-width: 400px;
+        height: 250px;
+        width: 250px;
+        margin: 0 auto 30px;
+        
+    }
 
+    #aboutpg-footer {
+        background-color: none;
+    }
 
-    
+    .about-tomagocha {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .font-color {
+        font-size: 1.5em;
+        color: #F3F3F3;
+        margin: 2em 4em 2em 4em;
+    }
+
+    #twitterLink {
+        font-size: 1.5em;
+        color: white;
+         margin: 2em 4em 2em 4em;
+    }
+
+    #tomagocha-twitter-link {
+        color: red;
+    }
+
+    #aboutpg-footer-border {
+        border-top: 2px solid #F3F3F3;
+    }
