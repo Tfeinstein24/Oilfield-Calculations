@@ -5,7 +5,7 @@ $(document).ready( function() {
 
 	$(document).on('click','#AV',function(){
 	console.log('#AV');
-	$('#inputs').html("<input id='holeSizeInput' type='text' value='Hole size/ID'>" + "<br><br>" + "<input id='DPsizeInput' type='text' value='DP Size'>" + "<br><br>" + "<input id='AVbtn' type='submit' value='Calculate'>") 
+	$('#inputs').html("<input id='holeSizeInput' type='text' value='Hole size/ID'>" + "<br><br>" + "<input id='DPsizeInput' type='text' value='DP Size'>" + "<br><br>" + "<input id='AVbtn' type='submit' value='Calculate'>")
 	});
 
 	$(document).on('click','#PV',function(){
@@ -56,14 +56,14 @@ $(document).ready( function() {
 
 	//=================FIREBASE AUTH SECTION=====================//
 
-	//Return true if user is signed-in. Otherwise false 
+	//Return true if user is signed-in. Otherwise false
 	var checkSignedIn = function() {
 		var auth = firebase.auth();
 		if(auth.currentUser.email !== null){
 			return true;
 		}
 		return false;
-	} // end checkSignedIn
+	}; // end checkSignedIn
 
 	//Sends an email verification to the user.
 	var sendEmailVerification = function() {
@@ -112,7 +112,7 @@ $(document).ready( function() {
 		    	if(error) {
 		    		console.log(errorMessage);
 		    	}
-		    	
+
 	   	 	});
 
 	   	 		//modal.style.display = "none";
@@ -134,9 +134,9 @@ $(document).ready( function() {
 		    		console.log(errorMessage);
 		    	}
 	   	 	});
-	   	 		//modal.style.display = "none"; 
+	   	 		//modal.style.display = "none";
 	   	 		//Send email verification
-	   	 		sendEmailVerification();   
+	   	 		sendEmailVerification();
 
 	     });//end login
 
@@ -144,20 +144,28 @@ $(document).ready( function() {
 	    $('#btn-logout').one("click", function(event) {
 	    	firebase.auth().signOut();
 	    	modal.style.display = "none";
+
+	    	//Show Login and Signup buttons
+	    	$('#btn-login').addClass('show');
+	    	$('#btn-sign-up').addClass('show');
+	    	//Hide sign-out button.
+	    	$('#btn-logout').addClass('hide');
+
 	    });
 
-	    
+
 
 	    //Add a realtime listener
 	    firebase.auth().onAuthStateChanged(function(user){
 	    	if(user) {
-	    		var email = user.email;	
+	    		var email = user.email;
 
 	    		if(user){
 	    			console.log(user);
 	    			//If user is anonymously signed in
 	    			var isAnonymous = user.isAnonymous;
 	    			var uid = user.uid;
+	    			//Hide Login and Signup buttons
 	    			$('#btn-login').addClass('hide');
 	    			$('#btn-sign-up').addClass('hide');
 	    			//Show sign-out button.
@@ -217,9 +225,9 @@ $(document).ready( function() {
 	});
 
 // If the user clicks on the calculate button
-	$('form').on("click", "#AVbtn", function(event) 
-		
-		//Check if user is logged in, if not, log user in 
+	$('form').on("click", "#AVbtn", function(event) {
+
+		//Check if user is logged in, if not, log user in
 		var isLoggedIn = checkSignedIn();
 		if(isLoggedIn === false) {
 			firebase.auth().signInAnonymously().then(function() {
@@ -233,8 +241,5 @@ $(document).ready( function() {
 		}
 
 	});
-     
+
 }); // end ready
-
-
-
