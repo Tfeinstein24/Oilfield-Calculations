@@ -59,8 +59,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="navbtn"><a href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/index.html">Home</a></li>
-        <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/about.html">About</a></li>
+        <li class="navbtn"><a href="#">Home</a></li>
+        <li><a class="navbtn" href="/about.html">About</a></li>
         <li><a class="navbtn" href="#">Projects</a></li>
         <li><a class="navbtn" href="file:///C:/Users/taylo/Desktop/code/Oilfield-Calculations/contact.html">Contact</a></li>
       </ul>
@@ -70,12 +70,13 @@
     </div>
   </div>
 </nav>
+
+
   
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a id="AV" class="link" href="#">Annular Volume</a></p>
-      <p><a id="PV" class="link" href="#">Pipe Volume</a></p>
+      <p><a id="IC" class="link" href="#">Inner Capacity</a></p>
       <p><a id="AC" class="link" href="#">Annular Capacity</a></p>
       <p><a id="AnnV" class="link" href="#">Annular Velocity</a></p>
       <p><a id="FIT" class="link" href="#">Formation Integrity Test (FIT)</a></p>
@@ -86,12 +87,16 @@
       <p><a id="SC" class="link" href="#">Slug Calculation</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Enter Parameters</h1>
 
-      <!-- All forms -->
-      <form id="inputs" action="/action_page.php">
-</form>
-      <hr>
+      <h1 id="calcPageTitle">Welcome!</h1>
+      
+        
+      <form id="inputs" action="">
+          <!-- bmc: this will be where the input pieces will be dynamically populated. In the meantime, we have some instructions-->
+          Click a calculation on the left.
+      </form>
+        <div id="outputs"></div>
+
       <h3>Saved Calculations</h3>
       <p id="display">Lorem ipsum...</p>
     </div>
@@ -109,14 +114,12 @@
       </div>
     </div>
   </div>
-</div>
 
 <!-- Navbar Bottom -->
 <footer class="navbar-fixed-bottom">
     <p>Copyright 2017 - Taylor Feinstein, Bon Crowder, Lonnie White, Rochelle Beal</p>
 </footer>
 
-</body>
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -130,5 +133,10 @@
   };
   firebase.initializeApp(config);
 </script>
+
 <script type="text/javascript" src="assets/javascript/app.js"></script>
+<script type="text/javascript" src="assets/javascript/calculations.js"></script>
+<script type="text/javascript" src="assets/javascript/inputs.js"></script>
+</body>
+
 </html>

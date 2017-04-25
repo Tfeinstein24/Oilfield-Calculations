@@ -1,3 +1,10 @@
+body {
+    background-repeat:no-repeat;
+    background-position: left 50% top 15%;
+    background-size: 35%;
+}
+
+
 footer {
     position: fixed;
     height: 70px;
@@ -23,4 +30,8 @@ background-color: #222;
 ul {
     list-style-type: none;
     line-height: 30px;
+}
+
+.result {
+    line-height:2em;
 }

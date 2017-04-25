@@ -1,6 +1,3 @@
-// Create on click event for the links
-// Create function that populates the input boxes when the link is clicked
-
 $(document).on('click','#AV',function(){
 console.log('#AV');
 $('#inputs').html("<input id='holeSizeInput' type='text' value='Hole size/ID'>" + "<br><br>" + "<input id='DPsizeInput' type='text' value='DP Size'>" + "<br><br>" + "<input id='AVbtn' type='submit' value='Calculate'>")
@@ -54,7 +51,6 @@ $('#inputs').html("<input type='text' value='Desired length of dry pipe (ft)'>" 
 
 // Firebase Code
 
-
 var dataRef = firebase.database().ref();
 // Initialize variables
 var holeID = 0;
@@ -88,6 +84,4 @@ dataRef.on("child_added",function(snapshot){
 	// display answers in html
 $("#display").html(snapshot.val().HoleID);
 });
-
-
 
