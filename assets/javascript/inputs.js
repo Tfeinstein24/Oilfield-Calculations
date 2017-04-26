@@ -15,7 +15,13 @@ $(document).on('click', '#IC', function () {
         calculateInnerCapacity();
         $("#outputs").html("<br><h3 class='result'>Standby as we caclulate inner capacity...</h3>");
         console.log("we're attempting to calculate pipe volume")
+        //>ro: create a name label and save button
+        $('#save-formular').html(
+            "<input type='text' placeholder='Name your formula' id='savedName'>" +
+            "<input type='submit' id='savedNameBtn' value='SAVE'>"
+        );
     });
+
 });
 
 $(document).on('click', '#AC', function () {
