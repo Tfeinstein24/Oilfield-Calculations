@@ -1,5 +1,3 @@
-$(".inputsForData").hide();
-
 $(document).ready(function () {
 
 

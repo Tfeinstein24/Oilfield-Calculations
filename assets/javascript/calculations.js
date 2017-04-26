@@ -4,6 +4,9 @@
 // bmc: TO DO
 // bmc: make a function for the repeating bits
 
+// bmc: We start with this at null because we'll need it to abort the ajax call if the user clicks elsewhere
+var bonsAjaxCall = null;
+
 function calculateInnerCapacity() {
     console.log("calculating inner capacity");
 
@@ -16,7 +19,7 @@ function calculateInnerCapacity() {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-    $.ajax({
+    bonsAjaxCall = $.ajax({
         url: queryGiveURL, // bmc: this sends inputs to the front worksheet only. We'll access the calculation sheet in the promise
         method: "PATCH",
         data: {
@@ -56,7 +59,7 @@ function calculateAnnularCapacity () {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-        $.ajax({
+        bonsAjaxCall = $.ajax({
             url: queryGiveURL,
             method: "PATCH",
             data: {
@@ -101,7 +104,7 @@ function calculateAnnularVelocity () {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-        $.ajax({
+        bonsAjaxCall = $.ajax({
             url: queryGiveURL,
             method: "PATCH",
             data: {
@@ -142,7 +145,7 @@ function calculateFormationIntegrityTest() {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-    $.ajax({
+    bonsAjaxCall =$.ajax({
         url: queryGiveURL, // bmc: this sends inputs to the front worksheet only. We'll access the calculation sheet in the promise
         method: "PATCH",
         data: {
@@ -178,7 +181,7 @@ function calculateFormationTemperature() {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-    $.ajax({
+    bonsAjaxCall =$.ajax({
         url: queryGiveURL, // bmc: this sends inputs to the front worksheet only. We'll access the calculation sheet in the promise
         method: "PATCH",
         data: {
@@ -214,7 +217,7 @@ function calculateHydrostaticPressure() {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-    $.ajax({
+    bonsAjaxCall =$.ajax({
         url: queryGiveURL, // bmc: this sends inputs to the front worksheet only. We'll access the calculation sheet in the promise
         method: "PATCH",
         data: {
@@ -250,7 +253,7 @@ function calculateLeakOffTest() {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-    $.ajax({
+    bonsAjaxCall =$.ajax({
         url: queryGiveURL, // bmc: this sends inputs to the front worksheet only. We'll access the calculation sheet in the promise
         method: "PATCH",
         data: {
@@ -285,7 +288,7 @@ function calculatePressureGradient() {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-    $.ajax({
+    bonsAjaxCall =$.ajax({
         url: queryGiveURL, // bmc: this sends inputs to the front worksheet only. We'll access the calculation sheet in the promise
         method: "PATCH",
         data: {
@@ -323,7 +326,7 @@ function calculateSlugCalculation() {
 
     var queryGetURL = "https://sheetsu.com/apis/v1.0/5b28081fedac/sheets/" + sheetName + "/rowChoice/calcLine"; // bmc: to get results
 
-    $.ajax({
+    bonsAjaxCall =$.ajax({
         url: queryGiveURL, // bmc: this sends inputs to the front worksheet only. We'll access the calculation sheet in the promise
         method: "PATCH",
         data: {
