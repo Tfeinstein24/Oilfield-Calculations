@@ -1,4 +1,7 @@
+$(".inputsForData").hide();
+
 $(document).ready(function () {
+
 
     //=================FIREBASE AUTH SECTION=====================//
 
