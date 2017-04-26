@@ -33,6 +33,14 @@ ul {
     line-height:2em;
 }
 
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
 /********** NAVITGATION **********/
 .navbtn {
     background-color: #0005DE;

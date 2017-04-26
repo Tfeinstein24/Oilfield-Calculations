@@ -7,8 +7,8 @@
           content="width=device-width, initial-scale=1">
     <!-- bmc: for some reason, we don't have this normalize.css file -->
     <!--<link rel="stylesheet"-->
-          <!--type="text/css"-->
-          <!--href="assets/css/normalize.css">-->
+    <!--type="text/css"-->
+    <!--href="assets/css/normalize.css">-->
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -54,18 +54,29 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <!-- The Modal -->
-                <div id="my-modal" class="modal">
-                  <!-- Modal content -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <input id="txt-email" type="email" placeholder="Email">
-                    <input id="txt-password" type="password" placeholder="Password">
-                    <button id="btn-login" class="btn btn-action">Log in</button>
-                    <button id="btn-sign-up" class="btn btn-secondary">Sign Up</button>
-                    <button id="btn-logout" class="btn btn-action hide">Log Out</button>
-                  </div>
-                </div> <!-- end Modal -->  
+                <!-- The Modal -->
+                <div id="my-modal"
+                     class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input id="txt-email"
+                               type="email"
+                               placeholder="Email">
+                        <input id="txt-password"
+                               type="password"
+                               placeholder="Password">
+                        <button id="btn-login"
+                                class="btn btn-action">Log in
+                        </button>
+                        <button id="btn-sign-up"
+                                class="btn btn-secondary">Sign Up
+                        </button>
+                        <button id="btn-logout"
+                                class="btn btn-action hide">Log Out
+                        </button>
+                    </div>
+                </div> <!-- end Modal -->
             </ul>
         </div>
     </div>
@@ -106,14 +117,37 @@
         <div class="col-sm-8 text-left">
             
             <h1 id="calcPageTitle">Welcome!</h1>
+            <!--<form id="inputsIC"-->
+                  <!--action="" class="hidden">-->
+                <!---->
+                <!--<input type="text"-->
+                       <!--placeholder="Diameter"-->
+                       <!--id="diameter"> inches<br><br>-->
+                <!--<input type="submit"-->
+                       <!--value="Calculate Inner Capacity">-->
+            <!--</form>-->
+    <!---->
+    <!---->
+            <!--<form id="inputsAC" action="" class="hidden">-->
+                <!--<input type="text"-->
+                       <!--placeholder="OD of Annulus"-->
+                       <!--id="outsideDiameter"> inches<br><br>-->
+                <!--<input type="text"-->
+                       <!--placeholder="ID of Annulus"-->
+                       <!--id="insideDiameter"> inches<br><br>-->
+                <!--<input type="text"-->
+                       <!--placeholder="Depth"-->
+                       <!--id="holeDepth"> feet<br><br>-->
+                <!--<input type="submit" value="Calculate Volume of Annulus">-->
+            <!--</form>-->
             
             
-            <form id="inputs"
-                  action="">
+            <form id="inputs" action="">
                 <!-- bmc: this will be where the input pieces will be dynamically populated. In the meantime, we have some instructions-->
                 Click a calculation on the left.
             </form>
             <div id="outputs"></div>
+            <!--<div id="save-formular"></div>-->
             
             <h3>Saved Calculations</h3>
             <p id="display">Lorem ipsum...</p>

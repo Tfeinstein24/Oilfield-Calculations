@@ -71,17 +71,18 @@ function calculateAnnularCapacity () {
                 method: "GET"
             }).done(function(response) {
 
-                gallonsAC = response[0].gallons;
-                cubicFeetAC = response[0].cubicFeet;
-                barrelsAC = response[0].barrels;
-                cuMetersAC = response[0].cubicMeters; // bmc: won't be displayed right now because we're only working in standard units
+                gallonsPerFoot = response[0].gallonsPerFoot;
+                feetPerGallon = response[0].feetPerGallon;
+                barrelsPerFoot = response[0].barrelsPerFoot;
+                feetPerBarrel = response[0].feetPerBarrel; // bmc: won't be displayed right now because we're only working in standard units
 
                 // bmc: need to do a loop here to display volume as requested
 
                 $("#outputs").html("<br><h3>The Annular Capacity is " +
-                        gallonsAC + " gallons, <br>" +
-                        cubicFeetAC + " cubic feet, <br>" +
-                        barrelsAC + " barrels</h3>");
+                        barrelsPerFoot + " bbl/ft" +
+                        feetPerBarrel + " ft/bbl" +
+                        gallonsPerFoot + " gal/ft, <br>" +
+                        feetPerGallon + " ft/gal, <br></h3>");
             });
         });
 
@@ -156,10 +157,10 @@ function calculateFormationIntegrityTest() {
             method: "GET"
         }).done(function(response) {
 
-            pressureRequired = response[0].pressureRequired;
+            presRequired = response[0].presRequired;
 
             $("#outputs").html("<br><h3>The pressure required is <br>" +
-                    pressureRequired + " psi</h3>");
+                    presRequired + " psi</h3>");
         });
     });
 }

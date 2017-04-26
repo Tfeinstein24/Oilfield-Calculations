@@ -1,4 +1,7 @@
+$(".inputsForData").hide();
+
 $(document).ready(function () {
+
 
     //=================FIREBASE AUTH SECTION=====================//
 
@@ -135,55 +138,6 @@ $(document).ready(function () {
 
 
     var dataRef = firebase.database().ref();
-    // Initialize variables
-    var holeID = 0;
-    var drillPipeSize = 0;
-
-    var AnnularVolume = {
-        HoleID: holeID,
-        DrillPipeSize: drillPipeSize,
-    };
-
-    // Submit/Firebase code
-    $("form").submit(function (e) {
-        e.preventDefault();
-        console.log(e);
-        // logic for storing input
-
-        AnnularVolume.HoleID = $('#holeSizeInput').val();
-        AnnularVolume.DrillPipeSize = $('#DPsizeInput').val();
-
-        // Push to Firebase
-        dataRef.child('AV').push({
-            HoleID: AnnularVolume.HoleID,
-            DrillPipeSize: AnnularVolume.DrillPipeSize,
-        });
-
-    });
-
-    dataRef.on("child_added", function (snapshot) {
-        console.log(snapshot.val());
-
-        // display answers in html
-        $("#display").html(snapshot.val().HoleID);
-    });
-
-// If the user clicks on the calculate button
-    $('form').on("click", "#AVbtn", function (event) {
-
-        //Check if user is logged in, if not, log user in
-        var isLoggedIn = checkSignedIn();
-        if (isLoggedIn === false) {
-            firebase.auth().signInAnonymously().then(function () {
-                console.log('Logged in as Anonymous!');
-            }).catch(function (error) {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                console.log(errorCode);
-                console.log(errorMessage);
-            });
-        }
-
-    });
+    
 
 }); // end ready
