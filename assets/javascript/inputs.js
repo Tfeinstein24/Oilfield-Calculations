@@ -14,11 +14,11 @@ $(document).on('click', '#IC', function () {
         e.preventDefault();
         if ($("#diameter").val()>0){
             calculateInnerCapacity();
-            $("#outputs").html("<br><h3 class='result'>Standby as we caclulate inner capacity...</h3>");
+            $("#outputs").html("<br><h3>Standby as we caclulate inner capacity...</h3>");
             console.log("we're attempting to calculate pipe volume")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
 
     });
@@ -43,7 +43,7 @@ $(document).on('click', '#AC', function () {
             console.log("we're attempting to calculate capacity")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers and make sure the OD is larger than the ID.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers and make sure the OD is larger than the ID.</h3>");
         }
     });
 });
@@ -68,7 +68,7 @@ $(document).on('click', '#AnnV', function () {
             console.log("we're attempting to calculate velocity")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers and make sure the Large Diam is larger than the Small Diam.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers and make sure the Large Diam is larger than the Small Diam.</h3>");
         }
 
 
@@ -95,7 +95,7 @@ $(document).on('click', '#FIT', function () {
             console.log("we're attempting to calculate FIT")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
 
     });
@@ -121,7 +121,7 @@ $(document).on('click', '#FT', function () {
             console.log("we're attempting to calculate formation temp")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter a positive number for the depth and a number larger than absolute zero for the temperatures.</h3>");
+            $("#outputs").html("<br><h3>Please enter a positive number for the depth and a number larger than absolute zero for the temperatures.</h3>");
         }
 
     });
@@ -145,7 +145,7 @@ $(document).on('click', '#HP', function () {
             console.log("we're attempting to calculate hydrostatic pressure")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
 
 
@@ -172,7 +172,7 @@ $(document).on('click', '#LOT', function () {
             console.log("we're attempting to calculate LOT")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
 
     });
@@ -195,7 +195,7 @@ $(document).on('click', '#PG', function () {
             console.log("we're attempting to calculate pressure gradient")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
     });
 
@@ -222,7 +222,7 @@ $(document).on('click', '#SC', function () {
             console.log("we're attempting to calculate slug stuff")
         }
         else {
-            $("#outputs").html("<br><h3 class='result'>Please enter only positive numbers.</h3>");
+            $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
 
     });

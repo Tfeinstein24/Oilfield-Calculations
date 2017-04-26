@@ -33,12 +33,8 @@ ul {
     line-height:2em;
 }
 
-.hidden {
-    display: none;
-}
-
-.shown {
-    display: block;
+#outputs {
+    width:50%;
 }
 
 /********** NAVITGATION **********/
