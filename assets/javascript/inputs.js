@@ -26,6 +26,13 @@ $(document).on('click', '#IC', function () {
 
 $(document).on('click', '#AC', function () {
     console.log('#AC');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
+
     $('#outputs').html('');
     $('#inputs').html(
             "<input type='text' placeholder='OD of Annulus' id='outsideDiameter'> inches" + "<br><br>" +
@@ -37,7 +44,7 @@ $(document).on('click', '#AC', function () {
         e.preventDefault();
 
         // bmc: validate that we have positive numbers and the OD is bigger than the ID. If it is, then do the calculations. If not, show a prompt to input the correct stuff.
-        if ($("#outsideDiameter").val()>0 && $("#insideDiameter").val()>0 && $("#outsideDiameter").val()>$("#insideDiameter").val()>0){
+        if ($("#outsideDiameter").val()>0 && $("#insideDiameter").val()>0 && $("#outsideDiameter").val()>$("#insideDiameter").val()){
             calculateAnnularCapacity();
             $("#outputs").html("<br><h3>Standby as we caclulate annular capacity...</h3>");
             console.log("we're attempting to calculate capacity")
@@ -50,18 +57,25 @@ $(document).on('click', '#AC', function () {
 
 $(document).on('click', '#AnnV', function () {
     console.log('#AnnV');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
+
     $('#outputs').html('');
     $('#inputs').html(
             "<input type='text' placeholder='Flow Rate' id='pumpOutput'> bbl/min" + "<br><br>" +
             "<input type='text' placeholder='Large Diam' id='bigDiam'> inches" + "<br><br>" +
             "<input type='text' placeholder='Small Diam' id='smallDiam'> inches" + "<br><br>" +
-            "<input type='submit' value='Calculate Annular Velocity' id='calcAnnVel'>")
+            "<input type='submit' value='Calculate Annular Velocity' id='calcAnnVel'>");
     $('#calcPageTitle').text("Annular Velocity");
     $("#calcAnnVel").on("click", function (e) {
         e.preventDefault();
 
         // bmc: validate that we have positive numbers and the Large Diam is bigger than the Small Diam. If it is, then do the calculations. If not, show a prompt to input the correct stuff.
-        if ($("#bigDiam").val()>0 && $("#smallDiam").val()>0 && $("#bigDiam").val()>$("#smallDiam").val()>0){
+        if ($("#bigDiam").val()>0 && $("#smallDiam").val()>0 && $("#bigDiam").val()>$("#smallDiam").val()){
 
             calculateAnnularVelocity();
             $("#outputs").html("<br><h3>Standby as we caclulate Annular Velocity...</h3>");
@@ -79,6 +93,13 @@ $(document).on('click', '#AnnV', function () {
 $(document).on('click', '#FIT', function () {
     console.log('#FIT');
     $('#outputs').html('');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
+
     $('#inputs').html(
             "<input type='text' placeholder='FIT required' id='fitRequired'> ppg" + "<br><br>" +
             "<input type='text' placeholder='Mud Weight' id='mudWeight'> ppg" + "<br><br>" +
@@ -103,6 +124,13 @@ $(document).on('click', '#FIT', function () {
 
 $(document).on('click', '#FT', function () {
     console.log('#FT');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
+
     $('#outputs').html('');
     $('#inputs').html(
             "<input type='text' placeholder='Surface Temperature' id='surfTemp'> degrees F" + "<br><br>" +
@@ -129,6 +157,13 @@ $(document).on('click', '#FT', function () {
 
 $(document).on('click', '#HP', function () {
     console.log('#HP');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
+
     $('#outputs').html('');
     $('#inputs').html(
             "<input type='text' placeholder='Mud weight' id='mudWeight'> ppg" + "<br><br>" +
@@ -156,6 +191,13 @@ $(document).on('click', '#HP', function () {
 $(document).on('click', '#LOT', function () {
     console.log('#LOT');
     $('#outputs').html('');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
+
     $('#inputs').html(
             "<input type='text' placeholder='LOT pressure' id='lotPressure'> psi" + "<br><br>" +
             "<input type='text' placeholder='Mud weight' id='mudWeightLOT'> ppg" + "<br><br>" +
@@ -180,6 +222,13 @@ $(document).on('click', '#LOT', function () {
 
 $(document).on('click', '#PG', function () {
     console.log('#PG');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
+
     $('#outputs').html('');
     $('#inputs').html(
             "<input type='text' placeholder='Mud weight' id='mudWeightPG'> ppg" + "<br><br>" +
@@ -203,6 +252,12 @@ $(document).on('click', '#PG', function () {
 
 $(document).on('click', '#SC', function () {
     console.log('#SC');
+
+    // bmc: if there's a previous ajax call happening when the user clicks over to this calculation, this code will abort that call
+    if(bonsAjaxCall != null){
+        bonsAjaxCall.abort();
+        bonsAjaxCall = null;
+    }
 
     $('#outputs').html('');
     $('#inputs').html(
