@@ -230,3 +230,45 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+**************************************************
+                     PAGE: BIO
+**************************************************/
+     div.row {
+        width: 1280px;
+        height: 1000px;
+    }
+
+/*** Team Member Bio Paragraph ***/
+    .fontColor {
+        color: white;
+        font-size: 18px;
+        
+        margin: 10px 10px 10px 10px;
+         
+     }
+
+     .nameColor {
+        font-family: 'Bitter', serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        text-shadow: .15em .10em black;
+        margin-top: 1em;
+     }
+
+     .teamBio {
+        width:
+        margin: 1.75em 1.75em 1.75em 1.75em;
+     }
+
+/*** Changed class name from .placeholderMargin to bioPhoto ***/
+    .bioPhoto {
+        margin: 2.25em 0 1em 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+     
