@@ -1,3 +1,16 @@
+/*** WEBPAGE COLORS **
+    blue: #0005DE
+    red: #DE0000
+    grey: #8D8D8D
+    White
+***********************/
+
+
+
+
+
+
+
 /*********** OTHER **********/
 
     body {
@@ -23,19 +36,29 @@
     }
 
 /********** NAVITGATION **********/
+
+/* Changed nav background colors */
     .navbtn {
-        background-color: #0005DE;
+        background-color: white;
+
     }
 
+    #blue {
+        color: blue;
+    }
+
+     a.navbtn {
+        color: blue;
+     }
 
     /*Tomagocha name in navbar */
     .Tomagocha {
         font-family: 'Bitter', serif;
-        background-color: #0005DE;
+        background-color: white;
         color: #DE0000;
         font-size: 1.5em;
         font-weight: bold;
-        text-shadow: .25px .25px white;
+        
     }
 
     /* glyphicon icon connected to login in navbar */
@@ -44,14 +67,14 @@
     }
 
     #navbar {
-        background-color: #0005DE;
+        background-color: white;
         
     }
 
     /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
-            border-bottom: 2px solid #F3F3F3;
-            background-color: #0005DE;
+            border-bottom: 2px solid #0005DE;
+            background-color: white;
             margin-bottom: 0;
             border-radius: 0;
         }
@@ -60,12 +83,12 @@
 
     /* Set black background color blue, silver text and some padding */
     footer {
-        background-color: #0005DE;
-        color: #8D8D8D;
+        background-color: white;
+        color: #DE0000;
         font-size: 1.5em;
         text-align: center;
         padding-top: 1em;
-        border-top: 2px solid white;
+        border-top: 5px solid #0005DE;
 
     }
 
@@ -166,3 +189,72 @@
     #aboutpg-footer-border {
         border-top: 2px solid #F3F3F3;
     }
+
+
+/**************************************************
+                     PAGE: BIO
+**************************************************/
+     div.row {
+        width: 1280px;
+    }
+
+    .fontColor {
+        color: white;
+        font-size: 18px;
+        
+        margin: 10px 10px 10px 10px;
+         
+     }
+
+     .nameColor {
+        font-family: 'Bitter', serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        text-shadow: .15em .10em black;
+        margin-top: 1em;
+     }
+
+     .teamBio {
+        width:
+        margin: 1.75em 1.75em 1.75em 1.75em;
+     }
+
+    .placeholderMargin {
+        margin: 2.25em 0 1em 0;
+    }
+
+
+/**************************************************
+                     PAGE: CONTACT
+**************************************************/
+
+    div.jumbtron.jumbotron-sm {
+        background-color: black;
+    }
+
+
+
+
+/******
+    .jumbotron {
+        background-color: white;
+        color: #9d9d9d;
+        border-radius: 0px;
+    }
+
+    .jumbotron-sm { padding-top: 24px;
+        padding-bottom: 24px; }
+
+    .jumbotron small {
+        color: #9d9d9d;
+    }
+
+    .h1 small {
+        font-size: 24px;
+    }
+
+    a {
+        color: #9d9d9d;
+    }
+**********/
