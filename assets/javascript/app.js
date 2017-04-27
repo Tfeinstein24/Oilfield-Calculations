@@ -3,7 +3,11 @@
 
 $(document).on('click','#AV',function(){
 console.log('#AV');
+<<<<<<< Updated upstream
 $('#inputs').html("<input id='holeSizeInput' type='text' value='Hole size/ID'>" + "<br><br>" + "<input id='DPsizeInput' type='text' value='DP Size'>" + "<br><br>" + "<input id='AVbtn' type='submit' value='Calculate'>")
+=======
+$('#inputs').html("<input type='text' value='Hole size/ID'>" + "<br><br>" + "<input type='text' value='DP Size'>" + "<br><br>" + "<input id='AVbtn' type='submit' value='Calculate'>")
+>>>>>>> Stashed changes
 });
 
 $(document).on('click','#PV',function(){
@@ -53,6 +57,7 @@ $('#inputs').html("<input type='text' value='Desired length of dry pipe (ft)'>" 
 });
 
 // Firebase Code
+<<<<<<< Updated upstream
 
 
 var dataRef = firebase.database().ref();
@@ -64,6 +69,17 @@ var AnnularVolume = {
 	HoleID: holeID,
 	DrillPipeSize: drillPipeSize,
 };
+=======
+var dataRef = firebase.database().ref().child('AVform');
+// Initialize variables
+var holeID = null;
+var drillPipeSize = null;
+
+var AnnularVolume = {
+	HoleID = holeID;
+	DrillPipeSize = drillPipeSize;
+}
+>>>>>>> Stashed changes
 
 // Submit/Firebase code
 $("form").submit(function(e){
@@ -71,6 +87,7 @@ $("form").submit(function(e){
 	console.log(e);
 	// logic for storing input
 
+<<<<<<< Updated upstream
 AnnularVolume.HoleID = $('#holeSizeInput').val();
 AnnularVolume.DrillPipeSize = $('#DPsizeInput').val();
 
@@ -91,3 +108,6 @@ $("#display").html(snapshot.val().HoleID);
 
 
 
+=======
+});
+>>>>>>> Stashed changes
