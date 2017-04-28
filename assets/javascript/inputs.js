@@ -87,7 +87,9 @@ $(document).on('click', '#AC', function () {
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
         $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().outsideDiam +
                 "</td><td>" + snapshot.val().innerDiam +
@@ -158,6 +160,9 @@ $(document).on('click', '#AnnV', function () {
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
+        $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().barrelsPerMin +
                 "</td><td>" + snapshot.val().bigDiam +
@@ -200,9 +205,6 @@ $(document).on('click', '#AnnV', function () {
         else {
             $("#outputs").html("<br><h3>Please enter only positive numbers and make sure the Large Diam is larger than the Small Diam.</h3>");
         }
-
-
-
     });
 });
 
@@ -223,12 +225,14 @@ $(document).on('click', '#FIT', function () {
             "<input type='submit' value='Calculate Pressure Required' id='calcPresReq'>");
     $('#calcPageTitle').text("Formation Integrity Test");
 
-
     var titlesForTable = uberDatabase.ref("ColHeaders").child("titlesFIT");
     console.log("titles for table not snapshot: " + titlesForTable);
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
+        $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().fitRequired +
                 "</td><td>" + snapshot.val().mudWeight +
@@ -271,7 +275,6 @@ $(document).on('click', '#FIT', function () {
         else {
             $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
-
     });
 });
 
@@ -292,13 +295,14 @@ $(document).on('click', '#FT', function () {
             "<input type='submit' value='Calculate Formation Temperature' id='calcFormTemp'>");
     $('#calcPageTitle').text("Formation Temperature");
 
-
     var titlesForTable = uberDatabase.ref("ColHeaders").child("titlesFT");
     console.log("titles for table not snapshot: " + titlesForTable);
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
         $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().surfTemp +
                 "</td><td>" + snapshot.val().tempGrad +
@@ -371,7 +375,9 @@ $(document).on('click', '#HP', function () {
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
         $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().mudWeight +
                 "</td><td>" + snapshot.val().verticalDepth +
@@ -411,9 +417,6 @@ $(document).on('click', '#HP', function () {
         else {
             $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
-
-
-
     });
 });
 
@@ -435,13 +438,14 @@ $(document).on('click', '#LOT', function () {
             "<input type='submit' value='Calculate LOT' id='calcLOT'>");
     $('#calcPageTitle').text("Leak Off Test");
 
-
     var titlesForTable = uberDatabase.ref("ColHeaders").child("titlesLOT");
     console.log("titles for table not snapshot: " + titlesForTable);
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
         $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().lotPressure +
                 "</td><td>" + snapshot.val().mudWeight +
@@ -483,7 +487,6 @@ $(document).on('click', '#LOT', function () {
         else {
             $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
-
     });
 });
 
@@ -507,7 +510,9 @@ $(document).on('click', '#PG', function () {
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
         $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().mudWeight +
                 "</td><td>" + snapshot.val().presGrad +
@@ -528,7 +533,6 @@ $(document).on('click', '#PG', function () {
         }) // bmc:  end of .each(snapshot.val().IC
     }); // bmc: end of infoForPersonNow.on("value"
 
-
     $("#calcPresGrad").on("click", function (e) {
         e.preventDefault();
 
@@ -545,7 +549,6 @@ $(document).on('click', '#PG', function () {
             $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
     });
-
 });
 
 $(document).on('click', '#SC', function () {
@@ -571,7 +574,9 @@ $(document).on('click', '#SC', function () {
     titlesForTable.on("value", function(snapshot) {
         console.log("titles for table in snapshot: ");
         console.log(snapshot.val());
+        
         $("#tableAreaHeading").text("Saved Calculations");
+        
         $("#savedCalcs > thead").html(
                 "<tr><td>" + snapshot.val().pipeLength +
                 "</td><td>" + snapshot.val().dpCapacity +
@@ -622,6 +627,5 @@ $(document).on('click', '#SC', function () {
         else {
             $("#outputs").html("<br><h3>Please enter only positive numbers.</h3>");
         }
-
     });
 });
