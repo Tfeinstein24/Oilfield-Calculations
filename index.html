@@ -121,13 +121,15 @@
             <h1 id="calcPageTitle">Welcome!</h1>
             
             <form id="inputs" action="">
-                <!-- bmc: this will be where the input pieces will be dynamically populated. In the meantime, we have some instructions-->
+                <!-- bmc: this will be where the input pieces will be dynamically populated. In the meantime, we have some instructions -->
                 Click a calculation on the left.
             </form>
-            <div id="outputs"></div>
-            <!--<div id="save-formular"></div>-->
             
+            <!-- bmc: this is where the outputs will go -->
+            <div id="outputs"></div>
+            <!-- bmc: where the "Saved Calculations" heading will go when it's time -->
             <h3 id="tableAreaHeading"></h3>
+            <!-- bmc: the table for the saved calculations from firebase -->
             <table class="table" id="savedCalcs">
                 <thead>
                 </thead>
@@ -161,27 +163,18 @@
 <footer class="navbar-fixed-bottom">
     <p>&copy; 2017 Tomagocha Ltd.</p>
 </footer>
-
+    
+<!-- standard firebase js -->
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
-
-// Initialize Firebase
-<script>
-    var config = {
-        apiKey: "AIzaSyBzyWlZhbc2949NipPslrcXRnMAvxC-rLc",
-        authDomain: "oilfield-calculations.firebaseapp.com",
-        databaseURL: "https://oilfield-calculations.firebaseio.com",
-        projectId: "oilfield-calculations",
-        storageBucket: "oilfield-calculations.appspot.com",
-        messagingSenderId: "20281812714"
-    };
-    firebase.initializeApp(config);
-</script>
-<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<!-- good old standard javascript -->
 <script type="text/javascript" src="assets/javascript/app.js"></script>
+<!-- the js for the calculations logic -->
 <script type="text/javascript"
         src="assets/javascript/calculations.js"></script>
+<!-- the js for the inputs logic -->
 <script type="text/javascript"
         src="assets/javascript/inputs.js"></script>
+<!-- the js for firebase logic -->
 <script type="text/javascript" src="assets/javascript/firebase.js"></script>
 </body>
 
