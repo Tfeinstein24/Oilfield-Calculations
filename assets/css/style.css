@@ -49,6 +49,22 @@ ul {
     margin-top: 24px;
 }
 
+.icon {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin:5px 5px 5px 5px;
+}
+
+.iconLink:hover {
+    text-decoration: none;
+}
+
+thead {
+    font-weight:bold;
+    font-size:1.3em;
+}
+
 /********** NAVITGATION **********/
 .navbtn {
     background-color: #0005DE;
