@@ -23,6 +23,11 @@ img {
     height: 50px;
 }
 
+#satellite {
+    width: 200px;
+    height: 200px;
+}
+
 h3 {
     margin: 0 0 1em 0;
 }
@@ -303,9 +308,5 @@ footer {
         border-radius: 50%;
     }
 
-#satellite {
-    width: 200px;
-    height: 200px;
-}
 
      
