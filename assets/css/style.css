@@ -42,6 +42,10 @@ ul {
     height:100%;
 }
 
+#tableAreaHeading {
+    margin-top: 24px;
+}
+
 /********** NAVITGATION **********/
 .navbtn {
     background-color: #0005DE;
