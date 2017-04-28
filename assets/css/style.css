@@ -17,12 +17,6 @@ html, body {
 }
 
 
-.background-image {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 img {
     width: 50px;
@@ -165,6 +159,13 @@ footer {
                 PAGE: ABOUT
 ********************************************/
 
+.background-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .profile-photo {
     display: block;
     max-height: 400px;
@@ -181,12 +182,12 @@ footer {
 }
 
 .about-tomagocha {
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: bold;
 }
 
 .font-color {
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: #F3F3F3;
     margin: 2em 4em 2em 4em;
 }
