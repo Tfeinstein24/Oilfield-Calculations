@@ -10,7 +10,7 @@ Our team is Taylor Feinstein, Lonnie White, Rochelle Beal and Bon Crowder. If yo
 
 ## Deployment
 
-The Oilfield Calculations application is fully functional online at bit.ly/oil-calc. 
+The Oilfield Calculations application is fully functional online at [bit.ly/oil-calc](http://bit.ly/oil-calc). 
 
 ## Tools Used
 
