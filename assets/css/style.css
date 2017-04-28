@@ -188,6 +188,7 @@ footer {
 
 .font-color {
     font-size: 1.75em;
+    font-weight: bold;
     color: #F3F3F3;
     margin: 2em 4em 2em 4em;
 }
@@ -196,10 +197,12 @@ footer {
     font-size: 1.5em;
     color: white;
     margin: 2em 4em 2em 4em;
+    font-weight: bold;
 }
 
 #tomagocha-twitter-link {
     color: red;
+    font-weight: bold;
 }
 
 #aboutpg-footer-border {
