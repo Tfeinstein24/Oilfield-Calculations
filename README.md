@@ -6,7 +6,7 @@ As residents of Houston, Texas, we all have close ties to the oilfield. This pro
 
 ## Contributors
 
-Our team is Taylor Feinstein, Lonnie White, Rochelle Beal and Bon Crowder. If you'd like to join the development team, 
+Our team is Taylor Feinstein, Lonnie White, Rochelle Beal and Bon Crowder. If you'd like to join the development team, see the information about contributing below.
 
 ## Deployment
 
@@ -41,8 +41,8 @@ This project will be licensed in conjunction with DrillingFormulas.com. In the m
 
 ## Acknowledgments
 
-* Erick XXXXX, our instructor for his support and encouragement
+* Erick Rivas, our instructor for his support and encouragement
 * Carl Posten, our "other" instructor who provides another view of coding
-* The support team at The Houston Coding Bootcamp: Michelle XXXX and Esmerelda Garcia
-* The board of directors 
+* The support team at The Houston Coding Bootcamp: Michelle Bury and Esmerelda Garcia
+* The Houston Coding Bootcamp Advisory Board
 * And big *THANK YOU!* to [DrillingFormulas.com](http://www.drillingformulas.com/) for their formulas
