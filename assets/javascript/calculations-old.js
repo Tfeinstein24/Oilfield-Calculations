@@ -1,8 +1,6 @@
 /**
  * Created by SilverDash on 4/22/17.
  */
-// bmc: TO DO
-// bmc: make a function for the repeating bits
 
 // bmc: We start with this at null because we'll need it to abort the ajax call if the user clicks elsewhere
 var bonsAjaxCall = null;
