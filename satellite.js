@@ -10,7 +10,7 @@ function showWeatherInfo() {
     }).done(function(response){
         console.log(response);
         var pictureSRC = response.satellite.image_url_vis;
-        var image = $("<img id='satellite'>")
+        var image = $("<img id='satellite2'>")
         image.attr("src", pictureSRC);
         $("#satellite").append(image);
 
