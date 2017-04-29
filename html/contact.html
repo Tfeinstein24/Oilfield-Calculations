@@ -1,45 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-    <title>Contact</title>
-    
+    <title>Oilfield Calculations</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <!-- bmc: for some reason, we don't have this normalize.css file -->
+    <!--<link rel="stylesheet"-->
+    <!--type="text/css"-->
+    <!--href="assets/css/normalize.css">-->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="assets/css/contactcss.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet"
+          type="text/css"
+          href="../assets/css/style.css">
+    <!-- Added google font for company name Tomagocha in nav bar -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
 </head>
-<body style="background-image: url('images/TomagochaFullMuted700px.jpg')">
+<body class="index-background"
+      background="../images/TomagochaFullMuted700px.jpg">
 
-<div class="jumbotron jumbotron-sm vertical center">
+<nav class="navbar navbar-inverse"
+     id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"
+               href="../index.html"><span class="Tomagocha">Tomagocha</span></a>
+        </div>
+        
+        <div class="collapse navbar-collapse"
+             id="myNavbar">
+            <ul class="nav navbar-nav">
+                <!-- Changed href to a # in home link -->
+                <li><a class="navbtn"
+                       href="../index.html">Home</a></li>
+                <li><a class="navbtn"
+                       href="about.html">About</a></li>
+                <!-- I deleted the "project" link in the navbar -->
+                <li><a class="navbtn"
+                       href="contact.html">Contact</a></li>
+                <li><a class="navbtn"
+                       href="bio.html">Bio</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-12">
-                <h1 class="h1">Contact us</h1>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                </div>
+                <h1 class="TomagochaBlack">Contact us</h1>
             </div>
         </div>
     </div>
-</div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="well well-sm">
+            <!--<div class="well well-sm">-->
                 <form>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="name">
+                                <label for="name" class="TomagochaBlack">
                                     Name</label>
                                 <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
                             </div>
                             <div class="form-group">
-                                <label for="email">
+                                <label for="email" class="TomagochaBlack">
                                     Email Address</label>
                                 <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
@@ -47,10 +91,10 @@
                                     <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
                             </div>
                             <div class="form-group">
-                                <label for="subject">
+                                <label for="subject" class="TomagochaBlack">
                                     Subject</label>
                                 <select id="subject" name="subject" class="form-control" required="required">
-                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="na" selected="" class="TomagochaBlack">Choose One:</option>
                                     <option value="service">General Customer Service</option>
                                     <option value="suggestions">Suggestions</option>
                                     <option value="product">Product Support</option>
@@ -59,24 +103,24 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="name">
+                                <label for="name" class="TomagochaBlack">
                                     Message</label>
                                 <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
                                           placeholder="Message"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            <button type="submit" class="btn btn-danger pull-right TomagochaWhite" id="btnContactUs">
                                 Send Message</button>
                         </div>
                     </div>
                 </form>
-            </div>
+            <!--</div>-->
         </div>
         <div class="col-md-4">
             <form>
-                <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
-                <address>
+                <legend class="TomagochaBlack"><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                <address class="TomagochaBlack">
                     <strong>Tomagocha, Ltd.</strong><br>
                     9990 Richmond Avenue, South Building, Ste. 102,<br>
                     Houston, TX 77042<br>
@@ -84,8 +128,8 @@
                         P:</abbr>
                     (713) 557-8048
                 </address>
-                <address>
-                    <strong>Bon Crowder</strong><br>
+                <address class="TomagochaBlack">
+                    <strong>Email us!</strong><br>
                     <a href="mailto:#">tomagocha@gmail.com</a>
                 </address>
             </form>
@@ -94,7 +138,7 @@
 </div>
 <!-- Navbar Bottom New Code -->
 <footer class="navbar-fixed-bottom">
-    <p>&copy; 2017 Tomagocha Ltd.</p>
+    <p class="TomagochaWhite">&copy; 2017 Tomagocha Ltd.</p>
 </footer>
 
 </body>

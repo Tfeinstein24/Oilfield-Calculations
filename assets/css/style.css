@@ -4,8 +4,14 @@
     grey: #8D8D8D
     White
 ***********************/
+textarea, input {
+    /*background: transparent;*/
+    opacity: 0.75;
+}
 
-
+.btn-danger {
+    background-color: #DE0000;
+}
 
 /*********** OTHER **********/
 
@@ -14,8 +20,8 @@ html, body {
     background-repeat: no-repeat;
     background-position: left 50% top 15%;
     background-size: 35%;
-}
 
+}
 
 
 img {
@@ -24,9 +30,12 @@ img {
 }
 
 /* bmc: for the weather thing in the sidebar */
+/* bmc: the percentages allow the image to scale with screen changes */
 #satellite2 {
-    width: 180px;
-    height: 200px;
+    /*width: 180px;*/
+    /*height: 200px;*/
+    width: 95%;
+    height: 95%;
 }
 
 h3 {
@@ -76,6 +85,23 @@ thead {
     background-color: #0005DE;
 }
 
+.TomagochaBlack {
+    font-family: 'Bitter', serif;
+    /*background-color: #0005DE;*/
+    color: black;
+    /*font-size: 1.5em;*/
+    font-weight: bold;
+    /*text-shadow: .25px .25px #DE0000;*/
+}
+
+.TomagochaWhite {
+    font-family: 'Bitter', serif;
+    /*background-color: #0005DE;*/
+    color: white;
+    /*font-size: 1.5em;*/
+    font-weight: bold;
+    /*text-shadow: .25px .25px #DE0000;*/
+}
 
 /*Tomagocha name in navbar */
 .Tomagocha {
