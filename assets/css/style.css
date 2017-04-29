@@ -215,18 +215,18 @@ footer {
     margin: 2em 4em 2em 4em;
 }
 
-/* bmc: since putting in the bootstrap-social buttons, we don't need these anymore */
-/*#twitterLink {*/
-    /*font-size: 1.5em;*/
-    /*color: white;*/
-    /*margin: 2em 4em 2em 4em;*/
-    /*font-weight: bold;*/
-/*}*/
+/* bmc: this is for the social media stuff on the bio page, I think */
+#twitterLink {
+    font-size: 1.5em;
+    color: white;
+    margin: 2em 4em 2em 4em;
+    font-weight: bold;
+}
 
-/*#tomagocha-twitter-link {*/
-    /*color: red;*/
-    /*font-weight: bold;*/
-/*}*/
+#tomagocha-twitter-link {
+    color: red;
+    font-weight: bold;
+}
 
 #aboutpg-footer-border {
     border-top: 2px solid #F3F3F3;
