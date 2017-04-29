@@ -1,0 +1,62 @@
+/*************************************
+             MEDIA QUERIES
+**************************************/
+
+
+@media screen and (max-width: 980px) {
+
+    /********** Bio Page *********/
+
+    .bioContainer {
+        height: 2000px;
+    }
+
+    .background-image {
+        background-size: 980px 1680px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    .teamBio {
+        width: 100%;
+        max-width: 830px;
+        margin-bottom: 0; }
+
+    .bioPhoto {
+        display: none;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /********* Bio Page *********/
+    .bioContainer {
+        max-height: 100%;
+        height: 920px;
+    }
+
+    .teamBio {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;}
+
+    .background-image {
+        background-image: none;
+    }
+
+    .nameColor { text-shadow: none; }
+
+    .fontColor { color: black;}
+
+    /******** About Page ********/
+
+    .font-color {
+        color: black;
+    }
+}
