@@ -1,10 +1,14 @@
 # Oilfield Calculations
 
+*Oilfield Calculations* is a clean and professional web based application that helps oilfield personnel quickly do the calculations they need. This is not a substitute for more robust systems that monitor and assess downhole situations. Rather this is a quick tool that helps personnel answer calculation questions from customers without digging through mounds of data or risk of making a "fat finger" error on a basic calculator. 
+
+Calculations are based on the formulas from [DrillingFormulas.com](http://www.drillingformulas.com/) and the app is fully functional. There are currently 9 options for calculations.
+
+## Contributors
+
 Our team formed mid-April 2017 as Tomagocha. We are students of [The Houston Coding Bootcamp Powered by UT Austin](https://houston.codingbootcamp.utexas.edu/).
 
 As residents of Houston, Texas, we all have close ties to the oilfield. This prompted our thinking toward solutions for oilfield personnel.
-
-## Contributors
 
 Our team is Taylor Feinstein, Lonnie White, Rochelle Beal and Bon Crowder. If you'd like to join the development team, see the information about contributing below.
 
