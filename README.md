@@ -25,7 +25,7 @@ The Oilfield Calculations application is fully functional online at [bit.ly/oil-
 
 ## Contributing
 
-If you'd like to contribute, shoot us an email or text at mathfour.com@gmail.com or 713-557-8048. We'll post coont
+If you'd like to contribute, shoot us an email or text at taylorsfeinstein@gmail.com or 713-992-3676. We'll post coont
 Please read [CONTRIBUTING.md](Oilfield-Calculations/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Code Manangement
@@ -35,7 +35,7 @@ We use [GitHub](http://github.com/) for code management.
 ## Authors
 
 * **Bon Crowder** - *Calculations* - [MathFour](https://github.com/mathfour)
-* **Taylor Feinstein** - *UI and Enhancements* - [TFeinstein24](https://github.com/TFeinstein24)
+* **Taylor Feinstein** - *UI, APIs, Javascript* - [TFeinstein24](https://github.com/TFeinstein24)
 * **Lonnie White** - *UI and Content* - [LonnieWhite](https://github.com/LonnieWhite)
 * **Rochelle Beal** - *Testing and Support* - [ro04](https://github.com/ro04)
 
